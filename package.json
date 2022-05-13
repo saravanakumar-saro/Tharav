@@ -1,0 +1,91 @@
+{
+  "name": "poc-redux-eslint-unittest",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.60",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
+    "enzyme": "^3.11.0",
+    "@types/enzyme": "^3.10.8",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
+    "jest": "^27.5.1",
+    "@types/jest": "^27.4.1",
+    "@testing-library/react": "^11.2.7",
+    "@types/node": "^16.11.26",
+    "react": "^17.0.2",
+    "@types/react": "^17.0.43",
+    "react-dom": "^17.0.2",
+    "@types/react-dom": "^17.0.14",
+    "react-router": "^5.2.1",
+    "react-router-dom": "^5.3.0",
+    "@types/react-router-dom": "^5.3.1",
+    "react-scripts": "5.0.0",
+    "typescript": "^4.6.3",
+    "web-vitals": "^2.1.4",
+    "@babel/preset-env": "^7.16.11"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "jest",
+    "eject": "react-scripts eject",
+    "lint": "eslint . src/**/*.ts",
+    "lint:fix": "eslint --fix --ext .js,.jsx ."
+  },
+  "jest": {
+    "verbose": true,
+    "setupFiles": [
+      "./test-setup.js"
+    ],
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!<rootDir>/node_modules/",
+      "!<rootDir>/path/to/dir/"
+    ],
+    "coveragePathIgnorePatterns": [
+      "index.tsx",
+      "reportWebVitals.ts"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 75,
+        "functions": 75,
+        "lines": 75,
+        "statements": 75
+      }
+    },
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "text",
+      "clover",
+      "cobertura"
+    ],
+    "coverageDirectory": "./coverage/",
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less|sass|scss)$": "<rootDir>/__mocks__/styleMock.js"
+    },
+    "moduleDirectories": [
+      "node_modules",
+      "src/Pages/"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

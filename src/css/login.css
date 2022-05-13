@@ -1,0 +1,102 @@
+.loginBoxContent {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 50px 0px 0px;
+  background-color: #f9f9f9;
+}
+.loginBox_inner {
+  padding: 10px 5px;
+  margin: 0px 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin-right: 5%;
+  width: 450px;
+  padding: 30px 20px;
+}
+.forgetPasswordLink {
+  font-size: 12px;
+  float: right;
+  text-decoration: underline;
+  margin-top: 12px;
+  margin-right: 12px;
+  color: #6472f7;
+  cursor: pointer;
+}
+.loginLink {
+  font-size: 12px;
+  text-decoration: none;
+  color: #6472f7;
+  cursor: pointer;
+}
+.MuiTab-textColorInherit {
+  color: rgba(250, 250, 250, 1) !important;
+  opacity: 1 !important;
+}
+.MuiTabs-indicator {
+  background-color: #e36c5c !important;
+  height: 3px !important;
+  font-size: 13px !important;
+}
+.MuiButtonBase-root {
+  font-family: 'DM Sans', sans-serif !important;
+}
+.NormalButtonColor {
+  background: none;
+  border-radius: 8px;
+  border: 1px solid #6472f7;
+  padding: 8px 20px;
+  color: unset;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 13px;
+  font-family: 'DM Sans', sans-serif;
+}
+.ActiveButtonColor {
+  background: #6472f7;
+  border-radius: 8px;
+  border: 1px solid #6472f7;
+  padding: 8px 20px;
+  color: #f7f9fa;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 13px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.MuiDialog-paper {
+  border-radius: 15px !important;
+}
+
+/* Text Field Css Start */
+.textFieldCss {
+  width: 100%;
+}
+.MuiOutlinedInput-input {
+  padding-left: 15px !important;
+  padding-top: 10px !important;
+  padding-right: 34px !important;
+  padding-bottom: 9px !important;
+  width: 100% !important;
+}
+.textFieldCss > div {
+  border-radius: 40px !important;
+}
+.MuiOutlinedInput-notchedOutline {
+  border: 1px solid #a4a4a4 !important;
+}
+.MuiOutlinedInput-notchedOutline:hover {
+  border: none !important;
+}
+.textFieldCss > div > .MuiOutlinedInput-input {
+  padding-left: 5px !important;
+}
+.MuiInputAdornment-root > .MuiIconButton-root {
+  padding: 0px !important;
+}
+.MuiInputAdornment-root > img ,
+.MuiInputAdornment-root > .MuiIconButton-root > span > svg {
+  color: #a4a4a4 !important;
+  padding-left: 5px !important;
+}
+/* Text Field Css End */

@@ -1,0 +1,10 @@
+node_modules
+__snapshots__
+coverage
+dist
+*.css
+*.svg
+*.png
+*.html
+*.test.tsx
+*.js
